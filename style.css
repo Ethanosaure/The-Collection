@@ -1,0 +1,109 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(170, 170, 255);
+}
+
+.tete {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 375px;
+}
+@media (min-width: 1440px) {
+  .tete {
+    margin-bottom: 50px;
+    width: -moz-max-content;
+    width: max-content;
+    text-align: center;
+  }
+}
+
+h1 {
+  text-align: center;
+  width: 375px;
+  align-self: center;
+}
+
+#explicatif {
+  width: 375px;
+  text-align: center;
+  align-self: center;
+}
+
+#collection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 1440px) {
+  #collection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.bandDiv {
+  border: 2px solid black;
+  margin: 5px;
+  width: 375px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1440px) {
+  .bandDiv {
+    margin: 30px;
+  }
+}
+
+img {
+  width: 375px;
+  height: 250px;
+}
+
+.bandName {
+  align-self: center;
+}
+
+.singer {
+  align-self: center;
+}
+
+.year {
+  align-self: center;
+}
+
+.genreList {
+  padding-left: 150px;
+}
+
+.castList {
+  padding-left: 150px;
+}
+
+.membres {
+  padding-left: 50px;
+  margin: 0;
+}
+
+.categorie {
+  padding-left: 65px;
+  margin: 0;
+}
+
+ul > li {
+  border: 1px solid black;
+  margin: 2px;
+  padding: 5px;
+  background-color: blue;
+  border-radius: 20px;
+}
+
+.rock {
+  border-radius: 50%;
+}/*# sourceMappingURL=style.css.map */
