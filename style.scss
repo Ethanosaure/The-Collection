@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
 $screen-mobile: 375px;
 $screen-desktop: 1440px;
 
@@ -16,7 +17,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(170, 170, 255);
+  background: linear-gradient(0.25turn, #333, #ebf8e1, #333);
 }
 .tete {
   display: flex;
@@ -57,50 +58,90 @@ h1 {
   border: 2px solid black;
   margin: 5px;
   width: 375px;
-  height: 700px;
+  height: 630px;
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
+  background: linear-gradient(#e66465, #9198e5);
   @include desktop() {
     margin: 30px;
   }
 }
 
-img {
-  width: 375px;
-  height: 250px;
-}
 .bandName {
   align-self: center;
+  font-family: "Metal Mania", cursive;
+  font-size: 30px;
+  margin: 0;
 }
 .singer {
   align-self: center;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
 }
 .year {
   align-self: center;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
 }
 .genreList {
-  padding-left: 150px;
+  padding-left: 15px;
 }
 .castList {
   padding-left: 150px;
 }
 .membres {
-  padding-left: 50px;
+  position: relative;
+  top: 38px;
+  padding-left: 45px;
   margin: 0;
-}
-.categorie {
-  padding-left: 65px;
-  margin: 0;
+  font-family: "Metal Mania", cursive;
 }
 ul > {
   li {
+    display: inline-block;
     border: 1px solid black;
     margin: 2px;
     padding: 5px;
     background-color: blue;
     border-radius: 20px;
+    width: 100px;
+    text-align: center;
+  }
+  li:hover {
+    background-color: red;
   }
 }
 .rock {
-  border-radius: 50%;
+  width: 375px;
+  height: 250px;
+  border-radius: 200px;
+}
+
+ol > {
+  li {
+    display: flex;
+  }
+}
+
+.croix {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: none;
+  background-image: url(/Assets/cross.webp);
+  background-size: cover;
+  background-position: center;
+  border: 0;
+}
+
+.picture {
+  width: 375px;
+  height: 250px;
+  border-radius: 8px;
+}
+
+.croix:hover {
+  background-color: rgb(223, 28, 28);
+  border-radius: 100%;
 }

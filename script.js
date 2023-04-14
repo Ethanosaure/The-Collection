@@ -4,7 +4,6 @@ const collection = [
     name: "While She Sleeps",
     Chanteur: "Lawrence Taylor",
     FormationYear: 2006,
-    catégorie: "genre:",
     genre: ["Metalcore"],
     membres: "members:",
     cast: [
@@ -20,7 +19,6 @@ const collection = [
     name: "Five Finger Death Punch",
     Chanteur: "Ivan Moody",
     FormationYear: 2005,
-    catégorie: "genre:",
     genre: ["Groove Metal"],
     membres: "members:",
     cast: ["Ivan Moody", "Chris Kael", "Charlie Engen", "Andy James"],
@@ -30,7 +28,6 @@ const collection = [
     name: "Linkin Park",
     Chanteur: "Chester Bennington",
     FormationYear: 1996,
-    catégorie: "genre:",
     genre: ["Rock", "Metal"],
     membres: "members:",
     cast: [
@@ -47,7 +44,6 @@ const collection = [
     name: "Django",
     Chanteur: "Django/Lazar Vachter",
     FormationYear: 2016,
-    catégorie: "genre:",
     genre: ["Rap"],
     membres: "members:",
     cast: ["Django"],
@@ -57,7 +53,6 @@ const collection = [
     name: "Carpenter Brut",
     Chanteur: "Franck Hueso",
     FormationYear: 2012,
-    catégorie: "genre:",
     genre: ["Rock électro"],
     membres: "members:",
     cast: ["Franck Hueso"],
@@ -67,7 +62,6 @@ const collection = [
     name: "Enter Shikari",
     Chanteur: "Roughton Reynolds",
     FormationYear: 2003,
-    catégorie: "genre:",
     genre: ["Post-hardcore"],
     membres: "members:",
     cast: ["Roughton Reynolds", "Chris Batten", "Liam Clewlow", "Rob Rolfe"],
@@ -77,7 +71,6 @@ const collection = [
     name: "Madredeus",
     Chanteur: "Teresa Salgueiro",
     FormationYear: 1985,
-    catégorie: "genre:",
     genre: ["Fado", "Folk", "classique"],
     membres: "members:",
     cast: [
@@ -93,7 +86,6 @@ const collection = [
     name: "Nirvana",
     Chanteur: "Kurt Cobain",
     FormationYear: 1987,
-    catégorie: "genre:",
     genre: ["Grunge"],
     membres: "members:",
     cast: ["Kurt Cobain", "Krist Novoselic", "Dave Grohl"],
@@ -103,7 +95,6 @@ const collection = [
     name: "System Of A Down",
     Chanteur: "Daron Malakian",
     FormationYear: 1994,
-    catégorie: "genre:",
     genre: ["Rock", "Metal"],
     membres: "members:",
     cast: ["Daron Malakian", "Serj Tankian", "Shavo Odadjian", "John Dolmayan"],
@@ -113,26 +104,30 @@ const collection = [
     name: "Shawn Mendes",
     Chanteur: "Shawn Mendes",
     FormationYear: 2013,
-    catégorie: "genre:",
     genre: ["Pop"],
     membres: "members:",
     cast: ["Shawn Mendes"],
   },
 ];
-
+let i = 0;
 const collectionDiv = document.getElementById("collection");
 collection.forEach((band) => {
   const bandDiv = document.createElement("div");
-  bandDiv.classList.add("bandDiv");
+  bandDiv.classList.add(`bandDiv`);
+  collection[i] = bandDiv.setAttribute("id", `game${[i]}`);
   const photo = document.createElement("img");
+  photo.classList.add("picture");
+  const croix = document.createElement("button");
+  croix.classList.add("croix");
+  croix.addEventListener("click", () => {
+    bandDiv.remove();
+  });
   const bandName = document.createElement("h3");
   bandName.classList.add("bandName");
   const singer = document.createElement("p");
   singer.classList.add("singer");
   const year = document.createElement("p");
   year.classList.add("year");
-  const categorie = document.createElement("h2");
-  categorie.classList.add("categorie");
   const genreList = document.createElement("ul");
   genreList.classList.add("genreList");
   const membres = document.createElement("h3");
@@ -140,11 +135,11 @@ collection.forEach((band) => {
   const castList = document.createElement("ol");
   castList.classList.add("castList");
 
+  croix.src = band.croix;
   photo.src = band.picture;
   bandName.innerText = band.name;
   singer.innerText = `Singer : ${band.Chanteur}`;
   year.innerText = ` formation year : ${band.FormationYear}`;
-  categorie.innerText = `genre:`;
   membres.innerText = `members:`;
 
   band.genre.forEach((genre) => {
@@ -160,12 +155,13 @@ collection.forEach((band) => {
   });
 
   bandDiv.appendChild(photo);
+  bandDiv.appendChild(croix);
+  bandDiv.appendChild(genreList);
   bandDiv.appendChild(bandName);
   bandDiv.appendChild(singer);
   bandDiv.appendChild(year);
-  bandDiv.appendChild(categorie);
-  bandDiv.appendChild(genreList);
   bandDiv.appendChild(membres);
   bandDiv.appendChild(castList);
   collectionDiv.appendChild(bandDiv);
+  i++;
 });
