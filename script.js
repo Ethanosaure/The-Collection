@@ -1,6 +1,6 @@
 const collection = [
   {
-    picture: "/The-Collection/Assets/WSS.jpg",
+    picture: "/Assets/WSS.jpg",
     name: "While She Sleeps",
     Chanteur: "Lawrence Taylor",
     FormationYear: 2006,
@@ -15,7 +15,7 @@ const collection = [
     ],
   },
   {
-    picture: "/The-Collection/Assets/FFDP.jpg",
+    picture: "/Assets/FFDP.jpg",
     name: "Five Finger Death Punch",
     Chanteur: "Ivan Moody",
     FormationYear: 2005,
@@ -24,7 +24,7 @@ const collection = [
     cast: ["Ivan Moody", "Chris Kael", "Charlie Engen", "Andy James"],
   },
   {
-    picture: "/The-Collection/Assets/Linkin park.jpg",
+    picture: "/Assets/Linkin park.jpg",
     name: "Linkin Park",
     Chanteur: "Chester Bennington",
     FormationYear: 1996,
@@ -40,7 +40,7 @@ const collection = [
     ],
   },
   {
-    picture: "/The-Collection/Assets/django.jpg",
+    picture: "/Assets/django.jpg",
     name: "Django",
     Chanteur: "Django/Lazar Vachter",
     FormationYear: 2016,
@@ -49,7 +49,7 @@ const collection = [
     cast: ["Django"],
   },
   {
-    picture: "/The-Collection/Assets/carpenter brut.jpg",
+    picture: "/Assets/carpenter brut.jpg",
     name: "Carpenter Brut",
     Chanteur: "Franck Hueso",
     FormationYear: 2012,
@@ -58,7 +58,7 @@ const collection = [
     cast: ["Franck Hueso"],
   },
   {
-    picture: "/The-Collection/Assets/Enter Shikari.jpg",
+    picture: "/Assets/Enter Shikari.jpg",
     name: "Enter Shikari",
     Chanteur: "Roughton Reynolds",
     FormationYear: 2003,
@@ -67,7 +67,7 @@ const collection = [
     cast: ["Roughton Reynolds", "Chris Batten", "Liam Clewlow", "Rob Rolfe"],
   },
   {
-    picture: "/The-Collection/Assets/Madredeus.jpg",
+    picture: "/Assets/Madredeus.jpg",
     name: "Madredeus",
     Chanteur: "Teresa Salgueiro",
     FormationYear: 1985,
@@ -82,7 +82,7 @@ const collection = [
     ],
   },
   {
-    picture: "/The-Collection/Assets/Nirvana.jpg",
+    picture: "/Assets/Nirvana.jpg",
     name: "Nirvana",
     Chanteur: "Kurt Cobain",
     FormationYear: 1987,
@@ -91,7 +91,7 @@ const collection = [
     cast: ["Kurt Cobain", "Krist Novoselic", "Dave Grohl"],
   },
   {
-    picture: "/The-Collection/assets/Soad.jpg",
+    picture: "/assets/Soad.jpg",
     name: "System Of A Down",
     Chanteur: "Daron Malakian",
     FormationYear: 1994,
@@ -100,7 +100,7 @@ const collection = [
     cast: ["Daron Malakian", "Serj Tankian", "Shavo Odadjian", "John Dolmayan"],
   },
   {
-    picture: "/The-Collection/Assets/Shawn Mendes.jpg",
+    picture: "/Assets/Shawn Mendes.jpg",
     name: "Shawn Mendes",
     Chanteur: "Shawn Mendes",
     FormationYear: 2013,
@@ -136,12 +136,12 @@ collection.forEach((band) => {
   castList.classList.add("castList");
   const divtext = document.createElement("div");
   divtext.classList.add("divtext");
-  const youtube = document.createElement("img");
-  youtube.classList.add("youtube");
+  // const youtube = document.createElement("img");
+  // youtube.classList.add("youtube");
 
   croix.src = band.croix;
   photo.src = band.picture;
-  youtube.src = "/Assets/YouTube_social_white_squircle.svg.png";
+  // youtube.src = "/Assets/YouTube_social_white_squircle.svg.png";
   bandName.innerText = band.name;
   singer.innerText = `Singer : ${band.Chanteur}`;
   year.innerText = ` formation year : ${band.FormationYear}`;
