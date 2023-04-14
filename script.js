@@ -1,6 +1,6 @@
 const collection = [
   {
-    picture: "/Assets/WSS.jpg",
+    picture: "Assets/WSS.jpg",
     name: "While She Sleeps",
     Chanteur: "Lawrence Taylor",
     FormationYear: 2006,
@@ -15,7 +15,7 @@ const collection = [
     ],
   },
   {
-    picture: "/Assets/FFDP.jpg",
+    picture: "Assets/FFDP.jpg",
     name: "Five Finger Death Punch",
     Chanteur: "Ivan Moody",
     FormationYear: 2005,
@@ -24,7 +24,7 @@ const collection = [
     cast: ["Ivan Moody", "Chris Kael", "Charlie Engen", "Andy James"],
   },
   {
-    picture: "/Assets/Linkin park.jpg",
+    picture: "Assets/Linkin park.jpg",
     name: "Linkin Park",
     Chanteur: "Chester Bennington",
     FormationYear: 1996,
@@ -40,7 +40,7 @@ const collection = [
     ],
   },
   {
-    picture: "/Assets/django.jpg",
+    picture: "Assets/django.jpg",
     name: "Django",
     Chanteur: "Django/Lazar Vachter",
     FormationYear: 2016,
@@ -49,7 +49,7 @@ const collection = [
     cast: ["Django"],
   },
   {
-    picture: "/Assets/carpenter brut.jpg",
+    picture: "Assets/carpenter brut.jpg",
     name: "Carpenter Brut",
     Chanteur: "Franck Hueso",
     FormationYear: 2012,
@@ -58,7 +58,7 @@ const collection = [
     cast: ["Franck Hueso"],
   },
   {
-    picture: "/Assets/Enter Shikari.jpg",
+    picture: "Assets/Enter Shikari.jpg",
     name: "Enter Shikari",
     Chanteur: "Roughton Reynolds",
     FormationYear: 2003,
@@ -67,7 +67,7 @@ const collection = [
     cast: ["Roughton Reynolds", "Chris Batten", "Liam Clewlow", "Rob Rolfe"],
   },
   {
-    picture: "/Assets/Madredeus.jpg",
+    picture: "Assets/Madredeus.jpg",
     name: "Madredeus",
     Chanteur: "Teresa Salgueiro",
     FormationYear: 1985,
@@ -82,7 +82,7 @@ const collection = [
     ],
   },
   {
-    picture: "/Assets/Nirvana.jpg",
+    picture: "Assets/Nirvana.jpg",
     name: "Nirvana",
     Chanteur: "Kurt Cobain",
     FormationYear: 1987,
@@ -91,7 +91,7 @@ const collection = [
     cast: ["Kurt Cobain", "Krist Novoselic", "Dave Grohl"],
   },
   {
-    picture: "/Assets/Soad.jpg",
+    picture: "Assets/Soad.jpg",
     name: "System Of A Down",
     Chanteur: "Daron Malakian",
     FormationYear: 1994,
@@ -100,7 +100,7 @@ const collection = [
     cast: ["Daron Malakian", "Serj Tankian", "Shavo Odadjian", "John Dolmayan"],
   },
   {
-    picture: "/Assets/Shawn Mendes.jpg",
+    picture: "Assets/Shawn Mendes.jpg",
     name: "Shawn Mendes",
     Chanteur: "Shawn Mendes",
     FormationYear: 2013,
