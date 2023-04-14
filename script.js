@@ -91,7 +91,7 @@ const collection = [
     cast: ["Kurt Cobain", "Krist Novoselic", "Dave Grohl"],
   },
   {
-    picture: "/assets/Soad.jpg",
+    picture: "/Assets/Soad.jpg",
     name: "System Of A Down",
     Chanteur: "Daron Malakian",
     FormationYear: 1994,
