@@ -134,9 +134,14 @@ collection.forEach((band) => {
   membres.classList.add("membres");
   const castList = document.createElement("ol");
   castList.classList.add("castList");
+  const divtext = document.createElement("div");
+  divtext.classList.add("divtext");
+  const youtube = document.createElement("img");
+  youtube.classList.add("youtube");
 
   croix.src = band.croix;
   photo.src = band.picture;
+  youtube.src = "/Assets/YouTube_social_white_squircle.svg.png";
   bandName.innerText = band.name;
   singer.innerText = `Singer : ${band.Chanteur}`;
   year.innerText = ` formation year : ${band.FormationYear}`;
@@ -153,15 +158,22 @@ collection.forEach((band) => {
     castItem.innerText = member;
     castList.appendChild(castItem);
   });
-
+  divtext.appendChild(genreList);
+  divtext.appendChild(bandName);
+  divtext.appendChild(singer);
+  divtext.appendChild(year);
+  // divtext.appendChild(youtube);
+  divtext.appendChild(membres);
+  divtext.appendChild(castList);
   bandDiv.appendChild(photo);
   bandDiv.appendChild(croix);
-  bandDiv.appendChild(genreList);
-  bandDiv.appendChild(bandName);
-  bandDiv.appendChild(singer);
-  bandDiv.appendChild(year);
-  bandDiv.appendChild(membres);
-  bandDiv.appendChild(castList);
+  bandDiv.appendChild(divtext);
+  // bandDiv.appendChild(genreList);
+  // bandDiv.appendChild(bandName);
+  // bandDiv.appendChild(singer);
+  // bandDiv.appendChild(year);
+  // bandDiv.appendChild(membres);
+  // bandDiv.appendChild(castList);
   collectionDiv.appendChild(bandDiv);
   i++;
 });
